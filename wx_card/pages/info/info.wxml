@@ -1,0 +1,65 @@
+<!--pages/info.wxml-->
+<view class='greybody'>
+  <view class='info_top'>
+    <view class='h3text'>
+      <view class='h3_a'>已选套餐</view>
+      <view class='h3_b'>48元不限量套餐48元不限量套餐</view>
+    </view>
+    <view class='h3text'>
+      <view class='h3_a'>已选号码</view>
+      <view class='h3_b'>18765321646</view>
+    </view>
+  </view>
+  <view class='remark'>注：请确保以下信息填写正确</view>
+  <view class='info_main'>
+    <view class='info_a'>
+      <label class='spanleft'><text>*</text>预约人姓名</label>
+      <input bindblur='nameInputEvent' class='spanrt' type='text' maxlength='10' placeholder='请输入真实姓名'></input>
+    </view>
+    <view class='info_a'>
+      <label class='spanleft'><text>*</text>身份证号码</label>
+      <input bindblur='idcardInputEvent' class='spanrt' type='idcard' maxlength='18' placeholder='请输入真实身份证号码'></input>
+    </view>
+    <view class='info_a'>
+      <label class='spanleft'><text>*</text>联系电话</label>
+      <input bindblur='mobileInputEvent' class='spanrt' type='number' maxlength='11' placeholder='请输入联系手机号'></input>
+    </view>
+    <view class='info_a'>
+      <label class='spanleft'><text>*</text>所在地区</label>
+      
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker {{clickpicker == 0 ? '':'grey'}}">
+            {{region[0]}} {{region[1]}} {{region[2]}}   
+        </view>
+      </picker>
+    </view>
+    <view class='info_a'>
+      <label class='spanleft'><text>*</text>详细地址</label>
+      <textarea bindblur='moreInputEvent' class='more' maxlength='60' placeholder='请填写详细地址'></textarea>
+    </view>
+   
+  </view>
+  <view class='recode'>
+    <view class='info_a'>
+      <label class='spanleft'>验证码</label>
+      <input bindblur='recodeInputEvent' class='spanrt' type='text' maxlength='6' placeholder='请输入短信验证码'></input>
+      <button bindtap='authcard' disabled='{{statebtn}}' class='authcard'>{{recodetext}}</button> 
+    </view>
+  </view>
+  <view  bindtap='btnsubmit' class='btn btn1'>确认提交</view>
+</view>
+<view wx:if="{{hink}}" class='hink'>
+  <view class='popup'>
+    <view bindtap='close' class='close'>
+      <image src='../../images/icon_close.png'></image>
+    </view>
+    <view class='popuphead'>
+      <image src='../../images/icon_hink.png'></image>
+    </view>
+    <text>
+      1. 预约成功后将有专人联系您
+      2. 您可通过活动首页的订单查询入口随时查看订单状态
+    </text>
+    <view bindtap='submittwice'  class='btn btn2'>立即预约</view>
+  </view>
+</view>

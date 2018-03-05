@@ -1,0 +1,27 @@
+<!--pages/result/result.wxml-->
+<view class='greybody'>
+  <view wx-if="{{id == 1}}" class='win'>
+    <view class='result'>
+      <image src='../../images/win.png'></image>
+      <view class='h3text'>预约成功! </view>
+      <view class='ptext'> 您可通过活动首页的订单查询入口随时查看订单状态</view>
+    </view>
+    <view class="btn" bindtap='win'>好的</view>
+  </view>
+  <view wx-if="{{id == 2}}" class='fail'>
+    <view class='result'>
+        <image src='../../images/shibai.png'></image>
+        <view class='h3text'>预约失败! </view>
+        <view class='ptext'>手慢啦，该号码已经被他人预约了~</view>
+      </view>
+      <view class="btn" bindtap='failone'>重新选号</view>
+  </view>
+   <view wx-if="{{id == 3}}" class='fail'>
+    <view class='result'>
+        <image src='../../images/shibai.png'></image>
+        <view class='h3text'>预约失败! </view>
+        <view class='ptext'>小伙伴蜂拥而至，请稍后再试~</view>
+      </view>
+      <view class="btn" bindtap='failtwo'>好的</view>
+  </view>
+</view>

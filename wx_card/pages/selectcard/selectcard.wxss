@@ -1,0 +1,137 @@
+/* pages/info.wxss */
+
+image{
+  width: 100%;
+  height: 100%
+}
+.greybody{
+  background: #f5f5f5;
+  padding-bottom: 30rpx;
+}
+.head{
+  width: 750rpx;
+  height: 220rpx;
+}
+.pb30{
+  padding-bottom: 30rpx;
+}
+
+.spanleft{
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  color: #232323;
+}
+.spanleft text{
+  color: #fe5733;
+}
+.spanright{
+  position: absolute;
+  top: 0;
+  right: 56rpx;
+  font-size: 28rpx;
+  color: #232323;
+}
+.infomain{
+  background: #fff;
+}
+.infitel{
+  position: relative;
+  margin-top: 20rpx;
+  width: 750rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.spanleft{
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #232323;
+}
+.spanleft image{
+  width: 6rpx;
+  height: 24rpx;
+  padding-right: 8rpx;
+}
+.spannew{
+  position: absolute;
+  top: 0;
+  right: 29rpx;
+  line-height: 80rpx;
+}
+.spannew image{
+  padding-top: 19rpx;   
+  width: 46rpx;
+  height: 46rpx;
+  display: inline-block;
+  margin-right: 8rpx;
+}
+.spannew text{
+  float: right;
+  color: #232323;
+  font-size: 28rpx;
+}
+.tellist{
+  overflow: hidden
+}
+.tellist view{
+  position: relative;
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 29rpx;
+  border: 2rpx solid #999;
+  width: 330rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  -webkit-border-radius: 5rpx;
+  color: #232323;
+  font-size: 28rpx;
+}
+.tellist .active{
+  position: relative;
+  color: #fe5733;
+  border: 2rpx solid #fe5733;
+}
+.tellist .active::after{
+  display: block;
+  content: '';
+  width: 52rpx;
+  height: 52rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk1QUYzRTMzMTk1MzExRThCQTBBOERDNjJERTgwRUNBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk1QUYzRTM0MTk1MzExRThCQTBBOERDNjJERTgwRUNBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTVBRjNFMzExOTUzMTFFOEJBMEE4REM2MkRFODBFQ0EiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTVBRjNFMzIxOTUzMTFFOEJBMEE4REM2MkRFODBFQ0EiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5kwNGIAAADM0lEQVR42tzaW0gUURgH8P/ZvHYxM5PywSBCiqILZUgUFpiFKD1IWGBZVnSxQqK8QLRlZVJkUUaCUI9Z1FM99NCD9hToqz1Zgd3ELpo3vGSnc3Za3HVmdtw9c2Zn5gPBdc7M7m/PnO/75iD5W7wBLgqvx00Y9nPJ4yYM/8XjJowbQEEYp4NUGCeDNDFOBelinAgKiXEayBDjJNCMME4BzRjjBFBYGLuDwsbYGRQRxq6giDF2BAlh7AYSxtgJZAqGR4zZn4y0dIQ1nu7daBom6jNkNiaqICEMIcDWfGBHkT1AQpi5SSBnb4KU13KZ/DUkFbMkA6SmEUhLV173/4wuSAizbCXD3APmJU/9beh39G45IUzGcjWGx2B/dEBCmJQ0kOq7agyP0RHrQUKY+ASQqjs+lGbEJVgLEq0zpKwKWJqpP8CfHKwACRfNzXlATmFocOZaa0DCmOSFbHaqjcdt2i4/bZvRzpDDNb4Cqv8mFHjzEvR5s3SQeG+WnQtkbdM/PjwI2nQZaG+V3m0bY3jWKjoK/JkAfdqkPh4bB1JSoX9+71fQunKg55P0xwdjzPotIIcqlczE68erJ8BAX/CYwgNA6mLt8z9/AL3GMH3fpXfboTELFoFU1Cv1xJ9mE2aDFOwPHjc/BWT3Qe1rfOsGrT1miDEDpI8h7NK7ikEaninrYnrs3AMkpUwN55h4daHEr17QK8fVsykBFHJmSPEJkNJzQOIcnfWUCFJY8j9NpwK5RdoJgGMYSvYDnuGaoS33QS+WAV2d+oPylFki+ftYGxMffGxyErSh0ne7hROzvKvT5aVm/s22vWAPmOx7W7FOedIMSkmxIGw9IadABaKPbgBvX4dfw8L8P4XI68yqLJDTV31dgGG0saL5ILK38ViC4dHZDnqh1Jd+QwZPzw/rpW+SmLM786MH1HsEeP9O+/j4GOht1mGPjUoFmbvVNDzACuRJzWRBHzcCXz5K3cYyfd/MFyNDoNdPAd1dAbdkB+seWoQv7bEcE1hj6s8o1X9iHLS5TumiBSMmKpjALuDWeWBNNms4u025pFbatgYjKTxuwkwHOR4TCHIFxg9yDYbHPwEGAHq0+C3jjSgnAAAAAElFTkSuQmCC);
+  background-size: 100% 100%;
+}
+.grey::before{
+  content: '已被预约';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color:#fff;
+}
+.telbtn{
+  width: 690rpx;
+  height: 80rpx;
+  background: #fe5733;
+  text-align: center;
+  color: #fff;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  margin: 30rpx auto auto auto;
+  border-radius: 13rpx;
+  -webkit-border-radius:13rpx;
+}
+.footer{
+  margin-top: 30rpx;
+  background: #fff;
+}
+.ptext{
+  color: #232323;
+  font-size: 24rpx;
+  margin: 0 30rpx;
+  line-height: 50rpx;
+}

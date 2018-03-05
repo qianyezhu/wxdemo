@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="indexbody">
+  <view class='indextop'>
+    <image src='../../images/indextop.png'></image>
+    <button class='top_a' open-type='share'></button>
+    <navigator hover-class="none" url='../order/order' class='top_b'></navigator>
+  </view>
+  <view class='indexflow'>
+    <image src='../../images/indexflow.png'></image>
+  </view>
+  <view class='indexmain'>
+      <view class='h3title'>
+        <image src='../../images/indextitle.png'></image>
+      </view>
+      <view class='indexmain_a'>
+        <image src='../../images/indexicon_a.png'></image>
+        <navigator hover-class="none" url='../selectcard/selectcard'></navigator>
+      </view>
+      <view class='indexmain_a'>
+        <image src='../../images/indexicon_b.png'></image>
+        <navigator hover-class='none' url='../selectcard/selectcard'></navigator>
+      </view>
+  </view>
+</view>

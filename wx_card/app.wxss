@@ -1,0 +1,61 @@
+/**app.wxss**/
+page{
+  height: 100%;
+}
+.greybody{
+  background: #f5f5f5;
+  min-height: 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.info_a{
+  position: relative;
+  width: 750rpx;
+  background: #fff;
+  line-height: 80rpx;
+  overflow: hidden;
+}
+.spanleft{
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  color: #232323;
+}
+.spanleft text{
+  color: #fe5733;
+}
+.btn{
+  background: #fe5733;
+  color: #fff;
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 13rpx;
+  -webkit-border-radius: 13rpx;
+}
+button[disabled]:not([type]){
+  color: #fe5733;
+  background: #fff;
+}
+.empty image{
+  display: block;
+  width: 228rpx;
+  height: 230rpx;
+  margin: 20rpx auto;
+}
+.empty text{
+  text-align: center;
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+}
+.empty{
+  padding-top: 50rpx;
+}

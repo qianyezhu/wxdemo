@@ -1,0 +1,49 @@
+<!--pages/info.wxml-->
+<view class='greybody'>
+  <view class='head'>
+    <image src='../../images/banner1.png'></image>
+  </view>
+
+  <view class='info_a'>
+    <view class='spanleft'><text>*</text>号码归属地</view>
+    <view class='spanright'>德州</view>
+  </view>
+
+  <view class='infomain'>
+    <view class='infitel'>
+      <view class='spanleft'><image src='../../images/icon_yuan.png'></image>
+      选择你中意的手机号</view>
+      <view class='spannew'>
+        <image src='../../images/sx.png'></image>
+        <text>换一批</text>
+    </view>
+    </view>
+    <view wx-if="{{list.length != 0}}">
+      <view class='tellist'>
+        <view wx:for="{{list}}" wx:for-item="item" wx:key="item.id" data-id="{{item.id}}" data-isno="{{item.isno}}" bindtap='selecttel' class="{{item.isno == 0 ? '':'grey'}} {{selectid == item.id ? 'active':''}}">{{item.tel}}</view>
+      </view>
+      <view class='pb30'>
+        <view class='telbtn' bindtap='telsubmit' >立即预约</view>
+      </view>
+    </view>
+     <view wx-if="{{list.length == 0}}">
+      <view class='empty'>
+        <image src='../../images/icon_kong.png'></image>
+         <text>已被抢光，小二正在补货~</text> 
+      </view>
+      <view class='pb30'>
+        <view class='telbtn' bindtap='telsubmit' >立即预约</view>
+      </view>
+    </view> 
+  </view>
+  <view class='footer'>
+    <view class='spanleft'>
+      <image src='../../images/icon_yuan.png'></image>
+      相关说明
+    </view>
+    <view class='ptext'>1.预约客户须填写正确信息，根据实名制相关要求，同一证件号码下全国范围内使用的移动电话卡达到5张（含5张）的，不得办理新的移动号码，请您见谅，是否符合实名制及一证五号要求请以当地移动营业厅实际查询为准。
+注：每位用户每日可以预约5次
+    </view> 
+    <view class='ptext'>2.预约成功后，移动营业厅工作人员将在3日内进行回访，您可通过活动首页的订单查询入口随时查看订单状态。</view>
+  </view>
+</view>

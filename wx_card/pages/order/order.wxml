@@ -1,0 +1,21 @@
+<!--pages/order/order.wxml-->
+<view class='greybody'>
+  <view wx-if="{{orderlist.length != 0}}" wx:for="{{orderlist}}" wx:key="order.id" wx:for-item="order" class='info_top'>
+    <view class='h3text'>
+      <view class='h3_a'>已选套餐</view>
+      <view class='h3_b'>{{order.combo}}</view>
+    </view>
+    <view class='h3text'>
+      <view class='h3_a'>已选号码</view>
+      <view class='h3_b'>{{order.tel}}</view>
+      <view class="{{itemstate == order.id ? 'onoff  on':'onoff'}}" data-id='{{order.id}}' bindtap='onoff'>查看订单状态</view>
+    </view>
+    <view wx-if="{{itemstate == order.id}}" class='item'>
+      <text wx:for="{{order.flow}}" wx:key="item.id" wx:for-item="item">{{item.ordertext}}</text>
+    </view>
+  </view>
+  <view wx-if="{{orderlist.length == 0}}" class='empty'>
+    <image src='../../images/icon_kong.png'></image>
+    <text>没有查询的您的对应订单</text>
+  </view>
+</view>

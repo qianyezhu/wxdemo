@@ -1,0 +1,75 @@
+/**index.wxss**/
+image{
+  width: 100%;
+  height: 100%;
+}
+.indexbody{
+  width: 750rpx;
+  background: #fe6f51;
+  min-height: 100%;
+  padding-bottom: 30rpx;
+}
+.indextop{
+  position: relative;
+  width: 750rpx;
+  height: 700rpx
+}
+.indextop image{
+  width: 100%;
+  height: 100%;
+}
+.top_a{
+  position: absolute;
+  top: 43rpx;
+  right: 0rpx;
+  width: 50rpx;
+  height: 120rpx;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAB4CAYAAACw/KG7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjE1RTk5ODUzMTkzRDExRTg4MzYxRTg2MTNFMjU1QjE1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjE1RTk5ODU0MTkzRDExRTg4MzYxRTg2MTNFMjU1QjE1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTVFOTk4NTExOTNEMTFFODgzNjFFODYxM0UyNTVCMTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTVFOTk4NTIxOTNEMTFFODgzNjFFODYxM0UyNTVCMTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6bsIOjAAAGYElEQVR42uxc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);
+  background-size: 100% 100%;
+}
+.top_a::after{  
+  border:1px solid #ea3014;  
+}  
+.top_a image{
+  width: 100%;
+  height: 100%;
+}
+.top_b{
+  position: absolute;
+  top: 330rpx;
+  right: 74rpx;
+  width: 132rpx;
+  height: 68rpx;
+}
+.indexflow{
+  width: 750rpx;
+  height: 252rpx;
+}
+.indexmain{
+  margin-top: 55rpx;
+}
+.h3title{
+  margin: 0 auto;
+  width: 376rpx;
+  height: 60rpx;
+}
+.indexmain_a{
+  position: relative;
+  width: 702rpx;
+  height: 220rpx;
+  margin: 20rpx auto;
+  text-align: center;
+  border-radius: 10rpx;
+  -webkit-border-radius:10rpx;
+} 
+.indexmain_a image{
+  border-radius: 10rpx;
+  -webkit-border-radius:10rpx;
+}
+.indexmain_a navigator{
+  position: absolute;
+  bottom: 36rpx;
+  left: 283rpx;
+  width: 160rpx;
+  height: 52rpx;
+}

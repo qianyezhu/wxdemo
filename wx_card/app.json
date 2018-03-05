@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/selectcard/selectcard",
+    "pages/order/order",
+    "pages/info/info",
+    "pages/result/result",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "线上预约",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#878787",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "backgroundColor": "#fcfcfc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabBar/home_2.png",
+        "selectedIconPath": "images/tabBar/home_1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "images/tabBar/mine_2.png",
+        "selectedIconPath": "images/tabBar/mine_1.png",
+        "text": "我的订单"
+      }
+    ]
+  }
+}
