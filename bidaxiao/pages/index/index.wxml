@@ -1,0 +1,62 @@
+<view class='bgcolor' style='background: url("../../images/bg_img.png");background-size: 100% 100%;'>
+  <view class='indexmain'>
+    <view class='tili'>
+      <image src='../../images/tilizhi.png'></image>
+      <text></text>
+    </view>
+    <view class='activ'>
+      <image src='../../images/guize.png'></image>
+    </view>
+    <view class='title'>
+      <image src='../../images/title.png'></image>
+    </view>
+    <view class='caiquan'>
+      <view class='leftmain'>
+        <image src='../../images/bu.png'></image>
+        <view class='userinfo'>
+          <image src='../../images/bu.png'></image>
+          <text>啊啊啊</text>
+        </view>
+      </view>
+      <view class='rightmain'>
+        <image src='{{imageAiScr}}'></image>
+        <view class='userinfo'>
+          <image src='../../images/bu.png'></image>
+          <text>啊啊啊</text>
+        </view>
+      </view>
+    </view>
+    <view class='footer'>
+      <view class='guize'>
+        <label bindtap='label' class='{{isselect ? "label active":"label"}}'></label>
+        <text>已阅读活动规则</text> 
+      </view>
+      <view class='cqbtn' bindtap='submitbtn'>
+        <image src='../../images/chuqian.png'></image>
+      </view>
+      <view class='time'>活动时间：即日至1月31日</view>
+      <navigator hover-class='none' class='record' url='/pages/record/record'>
+        <image src='../../images/jilu.png'></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view wx-if="{{ishink}}" class='hink'>
+  <view wx-if="{{isresult == 1}}" class='h_main' style='background:url("../../images/h_bg.png") no-repeat;background-size:100% 100%'>
+    <view bindtap='hclose' class='h_close' style='background:url("../../images/hink_close.png") no-repeat;background-size:100% 100%;'></view>
+    <view class='tips'>
+      <image src='../../images/draw.png'></image>
+    </view>
+    <text>胜败乃兵家常事
+再去试试吧~</text>
+    <view bindtap='hclose' class='h_btn'>知道了</view>
+  </view>
+   <view wx-if="{{isresult == 2}}" class='h_main' style='background:url("../../images/h_bg.png") no-repeat;background-size:100% 100%'>
+    <view bindtap='hclose' class='h_close' style='background:url("../../images/hink_close.png") no-repeat;background-size:100% 100%;'></view>
+    <view class='tips'>
+      <image src='../../images/win.png'></image>
+    </view>
+    <text>胜利</text>
+    <view bindtap='hclose' class='h_btn'>知道了</view>
+  </view>
+</view>

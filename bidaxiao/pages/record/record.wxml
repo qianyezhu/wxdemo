@@ -1,0 +1,54 @@
+<view class='recordbg'>
+  <view class='libg' style='background:url("../../images/record_bg.png");background-size:100% 100%'>
+    <view class='r_time'>2018-01-11</view>
+    <view class='r_main'>
+      <label>我</label>
+      <image class='r_icon' src='../../images/record_a.png'></image>
+      <image class='r_vs' src='../../images/vs2.png'></image>
+      <image class='r_icon' src='../../images/record_b.png'></image>
+      <label>浅叶竹</label>
+      <view class='resultbtn'>
+        <image src='../../images/record_icon1.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='libg' style='background:url("../../images/record_bg.png");background-size:100% 100%'>
+     <view class='r_time'>2018-01-11</view>
+      <view class='r_main'>
+        <label>我</label>
+        <image class='r_icon' src='../../images/record_a.png'></image>
+        <image class='r_vs' src='../../images/vs2.png'></image>
+        <image class='r_icon' src='../../images/record_a.png'></image>
+        <label>浅叶竹</label>
+        <view class='resultbtn'>
+          <image src='../../images/record_icon3.png'></image>
+        </view>
+      </view>
+  </view>
+  <view class='libg' style='background:url("../../images/record_bg.png");background-size:100% 100%'>
+     <view class='r_time'>2018-01-11</view>
+      <view class='r_main'>
+        <label>我</label>
+        <image class='r_icon' src='../../images/record_a.png'></image>
+        <image class='r_vs' src='../../images/vs2.png'></image>
+        <image class='r_icon' src='../../images/record_b.png'></image>
+        <label>浅叶竹</label>
+        <view class='resultbtn'>
+          <image src='../../images/record_icon2.png'></image>
+        </view>
+      </view>
+  </view>
+  <view class='libg' style='background:url("../../images/record_bg.png");background-size:100% 100%'>
+     <view class='r_time'>2018-01-11</view>
+      <view class='r_main'>
+        <label>我</label>
+        <image class='r_icon' src='../../images/record_a.png'></image>
+        <image class='r_vs' src='../../images/vs2.png'></image>
+        <image class='r_icon' src='../../images/record_b.png'></image>
+        <label>浅叶竹</label>
+        <view class='resultbtn'>
+          <image src='../../images/record_icon2.png'></image>
+        </view>
+      </view>
+  </view>
+</view>
